@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>郭千郁 - 個人履歷</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    margin:0;
+}
+
+.container{
+    width:80%;
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+header{
+    text-align:center;
+    border-bottom:2px solid #eee;
+    padding-bottom:15px;
+}
+
+h1{
+    margin:5px;
+}
+
+.student-id{
+    color:gray;
+}
+
+section{
+    margin-top:25px;
+}
+
+h2{
+    border-left:5px solid #4CAF50;
+    padding-left:10px;
+}
+
+ul{
+    line-height:1.8;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 15px;
+    border:none;
+    background:#4CAF50;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#45a049;
+}
+
+.hidden{
+    display:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<h1>郭千郁</h1>
+<p class="student-id">學號：AU114018050</p>
+</header>
+
+<section>
+<h2>個人簡介</h2>
+<p>
+我是郭千郁，目前是一名學生，對網頁設計與程式開發有興趣，
+正在學習 HTML、CSS、JavaScript 等前端技術。
+</p>
+</section>
+
+<section>
+<h2>技能</h2>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>基礎網頁設計</li>
+</ul>
+</section>
+
+<section>
+<h2>學習經歷</h2>
+<ul>
+<li>學習前端網頁設計</li>
+<li>練習製作個人網站</li>
+<li>了解基本程式邏輯</li>
+</ul>
+</section>
+
+<section>
+<h2>聯絡資訊</h2>
+<button onclick="showContact()">顯示聯絡方式</button>
+
+<p id="contact" class="hidden">
+Email: example@email.com
+</p>
+</section>
+
+</div>
+
+<script>
+function showContact(){
+    const contact = document.getElementById("contact");
+    contact.classList.toggle("hidden");
+}
+</script>
+
+</body>
+</html>
